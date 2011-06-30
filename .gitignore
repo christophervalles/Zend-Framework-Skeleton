@@ -1,6 +1,7 @@
 logs/
 cache/
-application/config/environment.php
+application/configs/environment.php
+application/configs/application.ini
 .buildpath
 .project
 .settings

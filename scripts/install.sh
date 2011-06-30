@@ -19,8 +19,9 @@ mkdir "${prefix}logs/frontend/missing_translations"
 mkdir "${prefix}cache"
 mkdir "${prefix}public/frontend/tmp"
 
-# Copy the dev environment folder
+# Copy the config files
 cp "${prefix}application/configs/environment.example.php" "${prefix}application/configs/environment.php"
+cp "${prefix}application/configs/application.example.ini" "${prefix}application/configs/application.ini"
 
 # Create the default log files
 touch "${prefix}logs/backoffice/flagflippers.log"
