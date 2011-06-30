@@ -34,22 +34,22 @@ $config['columnDataTypes'] = array(
 
 // additional actions
 $config['actions'] = array(
-    'toogle_dev'    =>  array(
-        'action'        => 'toogledev',
-        'title'         => 'Toogle dev',
+    'toggle_dev'    =>  array(
+        'action'        => 'toggledev',
+        'title'         => 'Toggle dev',
         'parameter'     => TRUE,
         'icon'          => FALSE,
     ),
-    'toogle_prod'    =>  array(
-        'action'        => 'toogleprod',
-        'title'         => 'Toogle prod',
+    'toggle_prod'    =>  array(
+        'action'        => 'toggleprod',
+        'title'         => 'Toggle prod',
         'parameter'     => TRUE,
         'icon'          => FALSE,
     ),
 );
 
 // configure the permissions
-$config['linkOrder'] = array('toogle_prod', 'toogle_dev');
+$config['linkOrder'] = array('toggle_prod', 'toggle_dev');
 
 // render the default listing
 echo $this->partial(

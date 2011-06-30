@@ -536,6 +536,9 @@ div.data-table table ul.actions li{
     display: inline;
     margin: 0 5px;
 }
+div.data-table table ul.actions li a{
+	text-decoration: none;
+}
 div.data-table table .tc{
     text-align: center;
 }

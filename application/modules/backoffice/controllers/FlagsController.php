@@ -39,11 +39,11 @@ class FlagsController extends App_Backoffice_Controller
      * @access public
      * @return void
      */
-    public function toogleprodAction(){
+    public function toggleprodAction(){
         $id = $this->getRequest()->getParam('id');
         
         $flagModel = new Flag();
-        $flagModel->toogleFlag($id, APP_STATE_PRODUCTION);
+        $flagModel->toggleFlag($id, APP_STATE_PRODUCTION);
         
         App_FlagFlippers_Manager::save();
         
@@ -56,11 +56,11 @@ class FlagsController extends App_Backoffice_Controller
      * @access public
      * @return void
      */
-    public function toogledevAction(){
+    public function toggledevAction(){
         $id = $this->getRequest()->getParam('id');
         
         $flagModel = new Flag();
-        $flagModel->toogleFlag($id, APP_STATE_DEVELOPMENT);
+        $flagModel->toggleFlag($id, APP_STATE_DEVELOPMENT);
         
         App_FlagFlippers_Manager::save();
         

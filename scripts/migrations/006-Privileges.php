@@ -23,8 +23,8 @@ class Privileges extends Akrabat_Db_Schema_AbstractChange
         $sql = "INSERT INTO `privileges` (`id`,`name`,`flag_id`,`description`)
 VALUES
 	(1, 'index', '1', 'Allows the user to view all the flags registered in the application'),
-	(2, 'toogleprod', '1', 'Change the active status of a flag on production'),
-	(3, 'toogledev', '1', 'Change the active status of a flag on development'),
+	(2, 'toggleprod', '1', 'Change the active status of a flag on production'),
+	(3, 'toggledev', '1', 'Change the active status of a flag on development'),
 	(4, 'index', '2', 'Allows the user to view all the user groups registered\nin the application'),
 	(5, 'add', '2', 'Allows the user to add another user group in the\napplication'),
 	(6, 'edit', '2', 'Edits an existing user group'),

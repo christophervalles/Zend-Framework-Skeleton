@@ -113,7 +113,7 @@ class Flag extends App_Model
      * @param string $env 
      * @return void
      */
-    public function toogleFlag($id, $env){
+    public function toggleFlag($id, $env){
         $select = $this->_select();
         $select->where('id = ?', $id);
         
