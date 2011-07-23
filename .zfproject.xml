@@ -7,6 +7,155 @@
       <configsDirectory>
         <applicationConfigFile type="ini"/>
       </configsDirectory>
+      <controllersDirectory enabled="false"/>
+      <modelsDirectory enabled="false"/>
+      <viewsDirectory enabled="false"/>
+      <modulesDirectory>
+        <moduleDirectory moduleName="backoffice">
+          <apisDirectory enabled="false"/>
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Index">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="System">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="example"/>
+            </controllerFile>
+            <controllerFile controllerName="Groups">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="add"/>
+              <actionMethod actionName="edit"/>
+              <actionMethod actionName="delete"/>
+              <actionMethod actionName="flippers"/>
+            </controllerFile>
+            <controllerFile controllerName="Users">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="add"/>
+              <actionMethod actionName="edit"/>
+              <actionMethod actionName="view"/>
+              <actionMethod actionName="delete"/>
+            </controllerFile>
+            <controllerFile controllerName="Flags">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="toggleprod"/>
+              <actionMethod actionName="toggledev"/>
+            </controllerFile>
+            <controllerFile controllerName="Privileges">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="add"/>
+              <actionMethod actionName="edit"/>
+              <actionMethod actionName="delete"/>
+            </controllerFile>
+            <controllerFile controllerName="Error">
+              <actionMethod actionName="error"/>
+              <actionMethod actionName="forbidden"/>
+              <actionMethod actionName="flagflippers"/>
+            </controllerFile>
+          </controllersDirectory>
+          <formsDirectory/>
+          <modelsDirectory/>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <zfsViewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="System">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="example"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Groups">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="add"/>
+                <zfsViewScriptFile forActionName="edit"/>
+                <zfsViewScriptFile forActionName="delete"/>
+                <zfsViewScriptFile forActionName="flippers"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Users">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="add"/>
+                <zfsViewScriptFile forActionName="edit"/>
+                <zfsViewScriptFile forActionName="view"/>
+                <zfsViewScriptFile forActionName="delete"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Flags">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="toggleprod"/>
+                <zfsViewScriptFile forActionName="toggledev"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Privileges">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="add"/>
+                <zfsViewScriptFile forActionName="edit"/>
+                <zfsViewScriptFile forActionName="delete"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Error">
+                <zfsViewScriptFile forActionName="error"/>
+                <zfsViewScriptFile forActionName="forbidden"/>
+                <zfsViewScriptFile forActionName="flagflippers"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+          </viewsDirectory>
+        </moduleDirectory>
+        <moduleDirectory moduleName="frontend">
+          <apisDirectory enabled="false"/>
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Index">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="static"/>
+            </controllerFile>
+            <controllerFile controllerName="Error">
+              <actionMethod actionName="error"/>
+              <actionMethod actionName="forbidden"/>
+              <actionMethod actionName="flagflippers"/>
+            </controllerFile>
+          </controllersDirectory>
+          <formsDirectory/>
+          <modelsDirectory/>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <zfsViewScriptFile forActionName="index"/>
+                <zfsViewScriptFile forActionName="about"/>
+                <zfsViewScriptFile forActionName="faq"/>
+                <zfsViewScriptFile forActionName="help"/>
+                <zfsViewScriptFile forActionName="terms"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Error">
+                <zfsViewScriptFile forActionName="error"/>
+                <zfsViewScriptFile forActionName="forbidden"/>
+                <zfsViewScriptFile forActionName="flagflippers"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+          </viewsDirectory>
+        </moduleDirectory>
+      </modulesDirectory>
     </applicationDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory/>
+      <appLibraryDirectory>
+        <zfsModelDirectory>
+            <zfsModelFile modelName="BackofficeUser"/>
+            <zfsModelFile modelName="BackofficeUserGroup"/>
+            <zfsModelFile modelName="BaseUser"/>
+            <zfsModelFile modelName="Flag"/>
+            <zfsModelFile modelName="Flipper"/>
+            <zfsModelFile modelName="Group"/>
+            <zfsModelFile modelName="Privilege"/>
+        </zfsModelDirectory>
+        <zfsTableDirectory>
+            <zfsTableFile tableName="BackofficeUser"/>
+            <zfsTableFile tableName="BackofficeUserGroup"/>
+            <zfsTableFile tableName="Flag"/>
+            <zfsTableFile tableName="Flipper"/>
+            <zfsTableFile tableName="Group"/>
+            <zfsTableFile tableName="Privilege"/>
+        </zfsTableDirectory>
+      </appLibraryDirectory>
+    </libraryDirectory>
+    <testsDirectory enabled="false">
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+    </testsDirectory>
   </projectDirectory>
 </projectProfile>
