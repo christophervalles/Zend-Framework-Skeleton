@@ -152,13 +152,13 @@ chmod -R 777 "${prefix}logs"
 chmod -R 777 "${prefix}cache"
 
 # Install the AkRabat migration tool
-echo "- Installing AkRabat migration tool"
-${prefix}bin/zf.sh --setup storage-directory
-${prefix}bin/zf.sh --setup config-file
-echo 'basicloader.classes.0 = "Akrabat_Tool_DatabaseSchemaProvider"' > ~/.zf.ini
+#echo "- Installing AkRabat migration tool"
+#${prefix}bin/zf.sh --setup storage-directory
+#${prefix}bin/zf.sh --setup config-file
+#echo 'basicloader.classes.0 = "Akrabat_Tool_DatabaseSchemaProvider"' > ~/.zf.ini
 
 # Run the migrations
 echo "- Running the DB migrations"
-${prefix}bin/zf.sh update database-schema
+${prefix}bin/zfs.sh update database-schema
 
 echo -e "\nInstallation finished"
