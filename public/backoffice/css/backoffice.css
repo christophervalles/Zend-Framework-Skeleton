@@ -200,11 +200,11 @@ form#tools-email-tester label input{
 /*  Overall styles
 -------------------------------------------------- */
 a.edit{
-    background: url(../images/icons/fff/pencil.png) 0 50% no-repeat;
+    background: url(../images/pencil.png) 0 50% no-repeat;
     padding: 5px 0 5px 18px;
 }
 a.delete{
-    background: url(../images/icons/fff/cross.png) 0 50% no-repeat;
+    background: url(../images/cross.png) 0 50% no-repeat;
     padding: 5px 0 5px 18px;
 }
 .hidden{
@@ -234,7 +234,7 @@ a.delete{
     color: #336801;
 }
 .msg-success p {
-    background: url("../images/icons/led-ico/accept.png") no-repeat;
+    background: url("../images/accept.png") no-repeat;
 }
 .msg-error {
     border-color: #f3abab;
@@ -242,7 +242,7 @@ a.delete{
     color: #8d0d0d;
 }
 .msg-error p {
-    background: url("../images/icons/led-ico/cross_octagon.png") no-repeat;
+    background: url("../images/cross_octagon.png") no-repeat;
 }
 .msg-warn {
     border-color: #d7e059;
@@ -250,7 +250,7 @@ a.delete{
     color: #6c6600;
 }
 .msg-warn p {
-    background: url("../images/icons/led-ico/exclamation_octagon_fram.png") no-repeat;
+    background: url("../images/exclamation_octagon_fram.png") no-repeat;
 }
 .msg-info {
     border-color: #9fd1f5;
@@ -258,7 +258,7 @@ a.delete{
     color: #005898;
 }
 .msg-info p {
-    background: url("../images/icons/icons/led-ico/exclamation.png") no-repeat;
+    background: url("../images/exclamation.png") no-repeat;
 }
 
 form ul.errors li{
